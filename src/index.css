@@ -1,5 +1,12 @@
 body {
   margin: 0;
+  padding:0;
+  line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +14,87 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container{
+  width:100vw;
+  height: 100vh;
+  background: rgb(21,21,32);
+  position: absolute;
+  text-align: center;
+  z-index: 2344567;
+  visibility: visible;
+  overflow: hidden;
+
+animation: stop  2s ease-in forwards 2s;
+  
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+   font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+;
+}
+
+.logo path:nth-child(1){
+stroke-dasharray:418.81829833984375 ;
+stroke-dashoffset: 418.81829833984375;
+animation: anim 2s forwards;
+}
+.logo path:nth-child(2){
+stroke-dasharray: 515.2610473632812;
+stroke-dashoffset: 515.2610473632812;
+animation: anim 2.5s ease forwards 0.3s;
+}
+.logo path:nth-child(3){
+stroke-dasharray:422.1617431640625 ;
+stroke-dashoffset:422.1617431640625 ;
+animation: anim 2s ease forwards 0.4s;
+}
+.logo path:nth-child(4){
+  stroke-dasharray:422.5006103515625;
+  stroke-dashoffset:422.5006103515625;
+  animation: anim 2s ease forwards 0.6s;
+}
+.logo path:nth-child(5){
+  stroke-dasharray:55.777156829833984 ;
+  stroke-dashoffset:55.777156829833984 ;
+  animation: anim 2s ease forwards 0.8s;
+}
+.logo path:nth-child(6){
+  stroke-dasharray: 561.4004516601562;
+  stroke-dashoffset:561.4004516601562 ;
+  animation: anim 2s ease forwards 1s;
+}
+.logo path:nth-child(7){
+  stroke-dasharray:515.263916015625 ;
+  stroke-dashoffset:515.263916015625 ;
+  animation: anim 2s ease forwards 1.2s;
+}
+.logo path:nth-child(8){
+  stroke-dasharray:355.2483825683594 ;
+  stroke-dashoffset: 355.2483825683594;
+  animation: anim 2s ease forwards 1.4s;
+}
+
+@keyframes anim {
+  to{
+    stroke-dashoffset:0;
+    
+  }
+}
+
+@keyframes stop{
+
+  to{
+    visibility: hidden;;
+  }
 }
