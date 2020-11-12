@@ -40,7 +40,9 @@ export default class ContactUs extends React.Component{
 
     
 
-   
+    handleFocus =(e)=>{
+     console.log(e.target)
+   }
 
 
   render(){
@@ -52,22 +54,22 @@ export default class ContactUs extends React.Component{
           <h5 className='white-text'>Send Me A Message!</h5>
           <div className="form" >
             <input className="input-field" type="text" placeholder="name" name='name' required/>
-            <label className='form-input-label shrink'> Name</label>
+            <label className='form-input-label shrink' > Name</label>
 
           </div>
           <div  className="form">
             <input className="input-field" type="text" placeholder="Email" name='email' required/>
-            <label className='form-input-label shrink'> Email</label>
+            <label className='form-input-label shrink' > Email</label>
             
           </div>
           <div className="form">
             <input className="input-field" type="text" placeholder="Phone" name='phone' required/>
-            <label className='form-input-label shrink'> Phone</label>
+            <label className='form-input-label shrink' > Phone</label>
             
           </div>
           <div className="form" >
             <textarea className="input-field" placeholder="Message" name='message' required></textarea> 
-            <label className='form-input-label shrink'> Message</label>          
+            <label className='form-input-label shrink' > Message</label>          
           </div>
           <div>
             <input type="submit" value='Send' onClick={this.clearForm} className='btn grey darken-3'/>

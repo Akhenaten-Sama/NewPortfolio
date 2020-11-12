@@ -35,6 +35,12 @@ h2.title{
     margin-top: 2rem;
     font-size: 1.2rem;
     background: $secondary-color;
+
+    @media screen  and (max-width:560px){
+      margin-right: 1.1rem;
+      margin-top: 2rem;
+      
+    }
     
     
   }
@@ -132,18 +138,19 @@ h2.title{
 }
 
 .work{
-  background:$tertiary-color;
-
-  ;
-  
-  
+  background:$tertiary-color; 
 }
 .projects{
  display: flex;
  flex-wrap:nowrap;
   width:100vw;
 
-//flex-wrap: wrap;
+
+@media screen  and (max-width:780px){
+  flex-wrap: nowrap;
+   overflow-x: auto;
+      
+}
   a{
     text-decoration: none;
   }
@@ -173,7 +180,6 @@ h2.title{
 .footer{
 background: $tertiary-color;
 color: #fff;
-position: sticky;
 width: 100%;
 padding-left: 1rem;
 padding-top:1rem;
@@ -181,6 +187,13 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+
+@media screen  and (max-width:560px){
+  position: sticky;
+  
+}
+
+
 
 .social-container{
   color: #fff;
@@ -238,8 +251,14 @@ z-index: 2;
   font-size:1.1rem;
  // padding: .2rem;
   transition: transform 0.8s ease;
+  @media screen  and (max-width:560px){
+    font-size: 0.9rem;
+    
+  }
   &:hover{
    transform: scale(1.06);
+
+   
    
   }
 }
