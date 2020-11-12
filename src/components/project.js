@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Project = ({img, link, name, github})=>(
-    <div>
+    <div >
     <div className="item">
         <div>
             <img src={img} alt=""/>

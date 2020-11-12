@@ -3,9 +3,9 @@ import Project from '../project';
 
 const Works = ()=>{
     return(<div className='work'>
-
+     
         <h2 className='title'>SOME WORKS</h2>
-        <div className='projects'>
+        <div className='projects' id='projects'>
         <Project
          name='Zeez'
          link='https://zeez-the-plug.netlify.app'

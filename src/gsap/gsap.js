@@ -17,7 +17,7 @@ ScrollTrigger.create({
     document.addEventListener('resize', ()=>{
         ScrollTrigger.refresh()
     })
-    let skew = clamp(self.getVelocity() / -700);
+    let skew = clamp(self.getVelocity() / -300);
     // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
     if (Math.abs(skew) > Math.abs(proxy.skew)) {
       proxy.skew = skew;
@@ -38,6 +38,32 @@ export const Timelines = ()=>{
     .from('.button', {x: 300, y:200, duration:2,opacity:0,}, "+2")
     
 }
+
+export const Horizontal = ()=> {
+
+  document.addEventListener('resize', ()=>{
+    ScrollTrigger.refresh()
+})
+
+let sections = gsap.utils.toArray('.item')
+      const scroller = document.getElementById('projects')
+
+      if (scroller !== null) {
+        gsap.to(sections, {
+          xPercent: -45 * (sections.length - 1),
+          ease: 'none',
+          scrollTrigger: {
+            trigger: '.work',
+            pin: true,
+            scrub: 1,
+            snap: 1 / (sections.length - 1),
+            // base vertical scrolling on how wide the container is so it feels more natural.
+            end: () => '+=' + scroller.offsetWidth
+          }
+        })
+      }
+    }
+    
 
 
 

@@ -7,17 +7,14 @@ $main-color: black;
     color: $main-color;
   }
 
+form{
+width:30vw;
+margin: 0 auto;
 
 .form{
-   // position: relative;
-    //margin: 45px 0;
-    form{
-         display:flex;
-         justify-content: center;
-      
-    
-    
-  
+    position: relative;
+    margin: 45px 0;
+   
     .input-field {
       background: none;
       background-color: white;
@@ -55,4 +52,4 @@ $main-color: black;
       }
     }
 
-    }
+  }

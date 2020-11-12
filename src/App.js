@@ -3,10 +3,11 @@ import './App.scss';
 import About from './components/about/About';
 import ContactUs from './components/ContactMe/contact';
 import cursor from './components/cursor';
+import Footer from './components/footer/footer';
 import Header from './components/navbar/navbar';
 import Skills from './components/Skills/skills';
 import Works from './components/works/works';
-import {skew, Timelines} from './gsap/gsap';
+import {Horizontal, skew, Timelines} from './gsap/gsap';
 import {ReactComponent as Logo} from './MyText.svg'
 
 function App() {
@@ -33,13 +34,13 @@ function App() {
 
   useEffect(()=>{
 if(!loading){
-  skew(skewAnim.current)
   Timelines()
   cursor()
   document.addEventListener('mousemove', (e)=>{
     setState({top:e.pageY, left:e.pageX})
   })
 }
+Horizontal()
 
   }, [loading])
 
@@ -65,9 +66,10 @@ if(!loading){
      <ContactUs  />
      </div>
      <div ref={addToRefs}>
-     <Skills  />
+     <Footer />
      </div>
 
+     
      
       
       

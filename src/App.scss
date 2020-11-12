@@ -1,5 +1,6 @@
 $primary-color:#444;
 $secondary-color:teal;
+$tertiary-color:rgb(21,21,32);
 
 @mixin easeOut {
   transition: all 0.4s ease-out  
@@ -77,7 +78,7 @@ h2.title{
     width:100%;
     z-index: -2;
     height:100%;
-    background: rgba(rgb(21,21,32), 0.8);
+    background: rgba($tertiary-color, 0.8);
 
     
     
@@ -104,8 +105,8 @@ h2.title{
 .skill-section{
  
   color:white;
-  height: 100vh;
-  background:hsl(240,20,10);
+  height: 40vh;
+  background:$tertiary-color;
 
   
 
@@ -131,15 +132,17 @@ h2.title{
 }
 
 .work{
-  background:hsl(240,20,10);
-  overflow-x: scroll;
+  background:$tertiary-color;
+
+  ;
+  
   
 }
 .projects{
  display: flex;
-flex-direction: row;
-width:100vw;
-justify-content: space-between;
+ flex-wrap:nowrap;
+  width:100vw;
+
 //flex-wrap: wrap;
   a{
     text-decoration: none;
@@ -165,6 +168,28 @@ justify-content: space-between;
   }
   
   
+}
+
+.footer{
+background: $tertiary-color;
+color: #fff;
+position: sticky;
+width: 100%;
+padding-left: 1rem;
+padding-top:1rem;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+.social-container{
+  color: #fff;
+  width:30%;
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+}
+
 }
 
 .btn{
@@ -217,5 +242,9 @@ z-index: 2;
    transform: scale(1.06);
    
   }
+}
+
+.transparent{
+  color:rgba(rgb(255,255,255), 0.5)
 }
 

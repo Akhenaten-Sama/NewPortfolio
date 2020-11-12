@@ -46,26 +46,26 @@ export default class ContactUs extends React.Component{
   render(){
 
     return (
-    <div className="form">
+    <div >
     <form id="cancel"  onSubmit={this.sendEmail} >
         <div className="card-panel">
           <h5 className='white-text'>Send Me A Message!</h5>
-          <div >
+          <div className="form" >
             <input className="input-field" type="text" placeholder="name" name='name' required/>
             <label className='form-input-label shrink'> Name</label>
 
           </div>
-          <div >
+          <div  className="form">
             <input className="input-field" type="text" placeholder="Email" name='email' required/>
             <label className='form-input-label shrink'> Email</label>
             
           </div>
-          <div >
+          <div className="form">
             <input className="input-field" type="text" placeholder="Phone" name='phone' required/>
             <label className='form-input-label shrink'> Phone</label>
             
           </div>
-          <div >
+          <div className="form" >
             <textarea className="input-field" placeholder="Message" name='message' required></textarea> 
             <label className='form-input-label shrink'> Message</label>          
           </div>
