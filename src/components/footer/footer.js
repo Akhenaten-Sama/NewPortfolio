@@ -14,14 +14,14 @@ export default function Footer() {
                     </a>
 				</div>
                 <div className="social">
-                <a href='https://github.com/Ahkenaten-Sama'>
+                <a href='https://github.com/Akhenaten-Sama'>
                 
                 <i className="fab fa-github " />
                 </a>
                 
             </div>
             <div className="social">
-            <a href='http://linkedin.com'>
+            <a href='https://www.linkedin.com/in/efunkunle/'>
             <i className="fab fa-linkedin " />
             </a>
 					

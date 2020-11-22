@@ -50,7 +50,7 @@ let sections = gsap.utils.toArray('.item')
 
       if (scroller !== null) {
         gsap.to(sections, {
-          xPercent: -45 * (sections.length - 1),
+          xPercent: -100 * (sections.length - 1),
           ease: 'none',
           scrollTrigger: {
             trigger: '.work',

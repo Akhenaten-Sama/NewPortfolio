@@ -7,7 +7,12 @@ export default class ContactUs extends React.Component{
         super(props)
     
         this.state = {
-            response:""
+            response:"",
+            name:null,
+            message:null,
+            email:null,
+            phone:null,
+
              
         }
     }
@@ -41,38 +46,39 @@ export default class ContactUs extends React.Component{
     
 
     handleFocus =(e)=>{
-     console.log(e.target)
+      const {name, value} = e.target
+     this.setState({[name]:value})
    }
 
-
+ 
   render(){
-
+    const {name, email,phone, message} = this.state
     return (
-    <div >
+    <div id="contact" >
     <form id="cancel"  onSubmit={this.sendEmail} >
         <div className="card-panel">
-          <h5 className='white-text'>Send Me A Message!</h5>
+          <h4 className='cente'>Send Me A Message!</h4>
           <div className="form" >
-            <input className="input-field" type="text" placeholder="name" name='name' required/>
-            <label className='form-input-label shrink' > Name</label>
+            <input className="input-field" type="text" onChange={this.handleFocus} name='name' required/>
+            <label className = {`form-input-label ${name?'shrink':' '}`} > Name</label>
 
           </div>
           <div  className="form">
-            <input className="input-field" type="text" placeholder="Email" name='email' required/>
-            <label className='form-input-label shrink' > Email</label>
+            <input className="input-field" type="text"  onChange={this.handleFocus}name='email' required/>
+            <label className={`form-input-label ${email?'shrink':''}`} > Email</label>
             
           </div>
           <div className="form">
-            <input className="input-field" type="text" placeholder="Phone" name='phone' required/>
-            <label className='form-input-label shrink' > Phone</label>
+            <input className="input-field" type="text" onChange={this.handleFocus} name='phone' required/>
+            <label className={`form-input-label ${phone?'shrink':null}`} > Phone</label>
             
           </div>
           <div className="form" >
-            <textarea className="input-field" placeholder="Message" name='message' required></textarea> 
-            <label className='form-input-label shrink' > Message</label>          
+            <textarea className="input-field" onChange={this.handleFocus} name='message' required></textarea> 
+            <label className={`form-input-label ${message?'shrink':null}`} > Message</label>          
           </div>
           <div>
-            <input type="submit" value='Send' onClick={this.clearForm} className='btn grey darken-3'/>
+            <input type="submit" value='Send' onClick={this.clearForm} className='btn-light center '/>
           </div>
 
         </div>

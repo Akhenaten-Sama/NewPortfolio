@@ -7,7 +7,7 @@ import Footer from './components/footer/footer';
 import Header from './components/navbar/navbar';
 import Skills from './components/Skills/skills';
 import Works from './components/works/works';
-import {Horizontal, skew, Timelines} from './gsap/gsap';
+import {Horizontal,  Timelines} from './gsap/gsap';
 import {ReactComponent as Logo} from './MyText.svg'
 
 function App() {

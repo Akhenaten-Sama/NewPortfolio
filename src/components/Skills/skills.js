@@ -1,36 +1,44 @@
 import React from 'react';
 
+const Skillset =[
+	{name:"Html", icon:"fab fa-html5 fa-3x"},
+	{name:"CSS", icon:"fab fa-css3-alt fa-3x"},
+	{name:"JavaScript", icon:"fab fa-js-square fa-3x"},
+	{name:"React", icon:"fab fa-react fa-3x"},
+	{name:"NodeJs", icon:"fab fa-node-js fa-3x"},
+	{name:"Redux", img:"https://img.icons8.com/color/45/000000/redux.png"},
+	{name:"GraphQL", img:"https://img.icons8.com/color/45/000000/graphql.png"},
+	{name:"Firebase", img:"https://img.icons8.com/color/45/000000/firebase.png"},
+	
+
+	
+	{name:"Github", icon:"fab fa-github-square fa-3x"},
+	{name:"Docker", icon:"fab fa-docker fa-2x"},
+	
+	
+]
+
+
 const Skills = () => {
 	return (
         <div className="skill-section">
         <h2 className='title'>Skills</h2>
-        <div className="skills">
-        
-			<div>
-				<div className="skill">
-					<i className="fab fa-js-square fa-3x" />
-				</div>
-				<h5>JavaScript</h5>
-			</div>
+		<div className="skills">
+		
 
-			<div>
-				<div className="skill">
-					<i className="fab fa-react fa-3x" />
-				</div>
-				<h5>React/Redux</h5>
+		{Skillset.map(skill=>{
+			return(<div>
+			<div className="skill">
+			{skill.icon?<i className={skill.icon} />:<img className="icon" src={skill.img} alt="firebase" />}
 			</div>
-			<div>
-				<div className="skill">
-					<img className="icon" src="https://img.icons8.com/color/45/000000/firebase.png" alt="firebase" />
-				</div>
-				<h5>Firebase</h5>
-				</div>
-                <div>
-				<div className="skill">
-					<i className="fab fa-github-square fa-3x" />
-				</div>
-                <h5>Github</h5>
-                </div>
+			<h5 class='skill-name'>{skill.name}</h5>
+		</div>)
+		})
+	}
+
+			
+			
+                
         
             </div>
             </div>
