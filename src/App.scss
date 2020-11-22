@@ -10,7 +10,8 @@ h2.title{
   text-align: center;
   color:white;
   font-weight: 600;
-  //font-family: ;
+   font-family: 'Lobster', cursive;
+   letter-spacing: 1.5;
   margin: 0;
 }
 
@@ -76,7 +77,7 @@ h2.title{
   background-repeat: no-repeat;
   padding: 2rem;
   height: 80vh;
-
+ 
   &:after {
     content: "";
     position: absolute;
@@ -265,7 +266,7 @@ z-index: 2;
 }
 
 .text{
-  font-size:1.1rem;
+  font-size:1.2rem;
  // padding: .2rem;
   transition: transform 0.8s ease;
   @media screen  and (max-width:560px){
