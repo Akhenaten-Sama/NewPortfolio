@@ -10,7 +10,7 @@ const About = () => {
 					<div className='paragh' >
                     <p className="text para">My name is Oluwaseun, a frontend engineer.</p>
                     <p className="text para">
-                      I am experienced in React, Redux and firebase, also offering skills in Node/Express. Currently based in Ibadan,Nigeria.</p>
+					I am experienced in React, Redux and Firebase while also adept in Node/Express. I am currently based in Ibadan, Nigeria but available to work remotely.</p>
                     <p className="text para">I like to watch videos on astrophysics and
                     take random photographs in my spare time.</p>
 						  
