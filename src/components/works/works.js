@@ -29,7 +29,8 @@ const Works = ()=>{
 
         <Project 
         name='Voting App'
-        link='voteapp.netlify.app'
+        link='https://voteapp.netlify.app'
+        github="https://github.com/Akhenaten-Sama/voteapps"
         img='vote.jpeg'/>
         </div>
         </div>)
