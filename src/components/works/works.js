@@ -12,6 +12,11 @@ const Works = ()=>{
          github='https://github.com/Akhenaten-Sama/Zeezah'
          img='zeez.jpeg'
          />
+
+         <Project name='TripsNG'
+         link="tripsng.netlify.app"
+         github="https://github.com/Akhenaten-Sama/oldhtml"
+         img='trips.jpeg'/>
         <Project name='SegunFlames'
         link='https://segun-oniyide.netlify.app' 
         github='https://github.com/Akhenaten-Sama/Segun-Oniyide'
