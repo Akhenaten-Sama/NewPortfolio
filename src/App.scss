@@ -112,9 +112,9 @@ h2.title{
 
 .skill-section{
  
-  color:#ffffff;
+  color:$tertiary-color;
   height: 100vh;
-  background:$tertiary-color;
+  background:$white;
   width:100vw;
 
   
@@ -135,10 +135,10 @@ h2.title{
     max-width: 10%;
     font-size: 1rem;
     padding:1.2rem;
-    color:white;
+    color:$tertiary-color;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid $tertiary-color;
     @media screen and (max-width: 992px) {
       max-width: 38%;
       
@@ -154,7 +154,7 @@ h2.title{
 }
 
 .work{
-  background:white; 
+  background:$tertiary-color; 
 }
 .projects{
  display: flex;
