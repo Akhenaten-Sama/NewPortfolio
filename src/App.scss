@@ -82,7 +82,11 @@ h2.title{
   color: #fff;
   background-repeat: no-repeat;
   padding: 2rem;
-  height: 80vh;
+  @media screen and (min-width: 992px) {
+    height: 70vh;
+    max-width: 60%;
+  }
+ 
  
   &:after {
     content: "";
