@@ -57,7 +57,7 @@ export default class ContactUs extends React.Component{
     <div id="contact" >
     <form id="cancel"  onSubmit={this.sendEmail} >
         <div className="card-panel">
-          <h4 className='cente'>Send Me A Message!</h4>
+          <h4 className='text-center'>Send Me A Message!</h4>
           <div className="form" >
             <input className="input-field" type="text" onChange={this.handleFocus} name='name' required/>
             <label className = {`form-input-label ${name?'shrink':' '}`} > Name</label>

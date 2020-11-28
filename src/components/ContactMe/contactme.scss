@@ -8,7 +8,7 @@ $main-color: black;
   }
 
 form{
-width:30vw;
+width:40vw;
 margin: 0 auto;
 
 .form{
@@ -52,4 +52,10 @@ margin: 0 auto;
       }
     }
 
+  }
+
+  .text-center{
+    margin-left:30%;
+    width: 100vw !important;
+    //display: flex;
   }
