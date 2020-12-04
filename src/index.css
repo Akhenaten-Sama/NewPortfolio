@@ -3,6 +3,7 @@ body {
   padding:0;
   line-height: 1.5;
   width: 100vw;
+  background: #f9f9f9;
   height: 100vh;
   box-sizing: border-box;
   align-items: center;

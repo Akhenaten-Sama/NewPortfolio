@@ -35,7 +35,7 @@ export const Timelines = ()=>{
     let tl = gsap.timeline()
     tl.from('.head-text', {x:200, opacity:0, ease:"ease.in",  duration:2})
     .from('.paragh', {y:200, opacity:0, duration:2}, "-=1")
-    .from('.button', {x: 300, y:200, duration:2,opacity:0,}, "+2")
+    .from('.button', {x: 100, y:100, duration:2,opacity:0,}, "+2")
     
 }
 
