@@ -131,8 +131,10 @@ h2.title{
   .skills{
     padding-left: 20%;
     display:grid;
+    box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 2rem;
+    //padding-bottom: 2rem !important;
     @media screen and (max-width: 992px) {
       padding-left: 10%;
       
