@@ -14,7 +14,7 @@ const Works = ()=>{
          />
 
          <Project name='TripsNG'
-         link="tripsng.netlify.app"
+         link="https://tripsng.netlify.app"
          github="https://github.com/Akhenaten-Sama/oldhtml"
          img='trips.jpeg'/>
         <Project name='SegunFlames'
