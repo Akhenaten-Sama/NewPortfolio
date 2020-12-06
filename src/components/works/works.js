@@ -13,10 +13,24 @@ const Works = ()=>{
          img='zeez.jpeg'
          />
 
+<Project name='Findr'
+        link='https://findrr.netlify.app' 
+        github='https://github.com/Akhenaten-Sama/Findr'
+        img='Findr.jpeg'/>
+
+<Project 
+        name='Voting App'
+        link='https://voteapp.netlify.app'
+        github="https://github.com/Akhenaten-Sama/voteapps"
+        img='vote.jpeg'/>
+
          <Project name='TripsNG'
          link="https://tripsng.netlify.app"
          github="https://github.com/Akhenaten-Sama/oldhtml"
          img='trips.jpeg'/>
+
+          
+
         <Project name='SegunFlames'
         link='https://segun-oniyide.netlify.app' 
         github='https://github.com/Akhenaten-Sama/Segun-Oniyide'
@@ -27,16 +41,9 @@ const Works = ()=>{
         github='https://github.com/Akhenaten-Sama/Node-weather-app'
         img='weather.jpeg'
         />
-        <Project name='Findr'
-        link='https://findrr.netlify.app' 
-        github='https://github.com/Akhenaten-Sama/Findr'
-        img='Findr.jpeg'/>
+       
 
-        <Project 
-        name='Voting App'
-        link='https://voteapp.netlify.app'
-        github="https://github.com/Akhenaten-Sama/voteapps"
-        img='vote.jpeg'/>
+        
         </div>
         </div>)
 }
